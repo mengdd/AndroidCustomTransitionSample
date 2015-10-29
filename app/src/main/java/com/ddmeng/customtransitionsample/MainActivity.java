@@ -1,5 +1,6 @@
 package com.ddmeng.customtransitionsample;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,8 +9,21 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
+
+import com.ddmeng.customtransitionsample.activity.ActivityTransitionHomePage;
+
+import butterknife.Bind;
+import butterknife.ButterKnife;
+import butterknife.OnItemClick;
 
 public class MainActivity extends AppCompatActivity {
+
+    private static Sample[] mSamples;
+    @Bind(R.id.samples_list)
+    ListView mListView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +40,21 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        ButterKnife.bind(this);
+
+
+        mSamples = new Sample[]{
+                new Sample(getResources().getString(R.string.activity_transition_demos), ActivityTransitionHomePage.class),
+        };
+
+        mListView.setAdapter(new ArrayAdapter<Sample>(this, android.R.layout.simple_list_item_1, android.R.id.text1, mSamples));
+    }
+
+    @OnItemClick(R.id.samples_list)
+    void onSampleListClick(AdapterView<?> parent, View view, int position, long id) {
+        // Launch the sample associated with this list position.
+        startActivity(new Intent(MainActivity.this, mSamples[position].getActivityClass()));
     }
 
     @Override
@@ -49,4 +78,6 @@ public class MainActivity extends AppCompatActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+
 }
