@@ -9,4 +9,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.ddmeng.customtransitionsample.activity.SharedElementActivityOne">
 
+    <ImageView
+        android:id="@+id/shared_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:transitionName="@string/shared_elements_transition_robot"
+        android:src="@drawable/ic_android_black_48dp" />
+
+    <Button
+        android:id="@+id/go_to_next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:text="Go to Next Activity" />
+
 </RelativeLayout>

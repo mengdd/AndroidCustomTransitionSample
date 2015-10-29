@@ -2,6 +2,8 @@
     <string name="app_name">CustomTransitionSample</string>
     <string name="action_settings">Settings</string>
 
+    <!--Activity Transitions-->
     <string name="activity_transition_demos">Activity Transition Demos</string>
     <string name="activity_transition_shared_elements">Shared Elements</string>
+    <string name="shared_elements_transition_robot">robot</string>
 </resources>
