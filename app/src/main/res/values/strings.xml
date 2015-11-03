@@ -4,7 +4,8 @@
 
     <!--Activity Transitions-->
     <string name="activity_transition_demos">Activity Transition Demos</string>
-    <string name="activity_transition_shared_elements">Shared Elements</string>
-    <string name="activity_transition_shared_elements_change_bounds">Change Bounds</string>
+    <string name="activity_transition_shared_elements">Shared element</string>
+    <string name="activity_transition_shared_elements_change_bounds">Shared element: Change Bounds</string>
     <string name="shared_elements_transition_robot">robot</string>
+    <string name="activity_transition_explode">Explode</string>
 </resources>

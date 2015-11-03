@@ -34,6 +34,8 @@ public class ActivityTransitionHomePage extends AppCompatActivity {
                         SharedElementActivityOne.class),
                 new Sample(getResources().getString(R.string.activity_transition_shared_elements_change_bounds),
                         SharedElementChangeBoundsActivityOne.class),
+                new Sample(getResources().getString(R.string.activity_transition_explode),
+                        ExplodeActivityOne.class),
         };
 
         mListView.setAdapter(new ArrayAdapter<Sample>(this, android.R.layout.simple_list_item_1, android.R.id.text1, mSamples));
