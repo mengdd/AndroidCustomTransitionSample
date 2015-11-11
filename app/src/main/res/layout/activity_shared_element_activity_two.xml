@@ -13,6 +13,7 @@
         android:id="@+id/shared_image_view"
         android:layout_width="100dp"
         android:layout_height="100dp"
+        android:background="@color/green"
         android:src="@drawable/ic_android_black_48dp"
         android:transitionName="@string/shared_elements_transition_robot" />
 

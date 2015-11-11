@@ -14,8 +14,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:transitionName="@string/shared_elements_transition_robot"
-        android:src="@drawable/ic_android_black_48dp" />
+        android:background="@color/red"
+        android:src="@drawable/ic_android_black_48dp"
+        android:transitionName="@string/shared_elements_transition_robot" />
 
     <Button
         android:id="@+id/go_to_next_button"
