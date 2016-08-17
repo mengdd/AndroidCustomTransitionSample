@@ -8,4 +8,7 @@
     <string name="activity_transition_shared_elements_change_bounds">Shared element: Change Bounds</string>
     <string name="shared_elements_transition_robot">robot</string>
     <string name="activity_transition_explode">Explode</string>
+
+    <!-- Fragment Transitions -->
+    <string name="fragment_transition_demos">Fragment Transition Demos</string>
 </resources>

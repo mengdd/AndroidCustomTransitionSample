@@ -14,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import com.ddmeng.customtransitionsample.activity.ActivityTransitionHomePage;
+import com.ddmeng.customtransitionsample.fragment.FragmentContainerActivity;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -46,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
         mSamples = new Sample[]{
                 new Sample(getResources().getString(R.string.activity_transition_demos), ActivityTransitionHomePage.class),
+                new Sample(getResources().getString(R.string.fragment_transition_demos), FragmentContainerActivity.class)
         };
 
         mListView.setAdapter(new ArrayAdapter<Sample>(this, android.R.layout.simple_list_item_1, android.R.id.text1, mSamples));

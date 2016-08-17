@@ -35,6 +35,9 @@
         <activity
             android:name=".activity.ExplodeActivityTwo"
             android:theme="@style/ExplodeTheme" />
+        <activity
+            android:name=".fragment.FragmentContainerActivity"
+            android:label="@string/fragment_transition_demos" />
     </application>
 
 </manifest>
