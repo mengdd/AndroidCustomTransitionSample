@@ -9,4 +9,13 @@
         android:layout_height="wrap_content"
         android:text="Second" />
 
+    <ImageView
+        android:id="@+id/image_in_first_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_android_black_48dp"
+        android:transitionName="@string/fragment_transition_shared_element_transition_name" />
+
 </LinearLayout>

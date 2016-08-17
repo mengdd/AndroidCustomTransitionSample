@@ -11,4 +11,5 @@
 
     <!-- Fragment Transitions -->
     <string name="fragment_transition_demos">Fragment Transition Demos</string>
+    <string name="fragment_transition_shared_element_transition_name" translatable="false">fragment shared image</string>
 </resources>
