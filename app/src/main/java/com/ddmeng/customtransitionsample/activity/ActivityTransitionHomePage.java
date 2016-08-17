@@ -1,8 +1,8 @@
 package com.ddmeng.customtransitionsample.activity;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -11,13 +11,13 @@ import android.widget.ListView;
 import com.ddmeng.customtransitionsample.R;
 import com.ddmeng.customtransitionsample.Sample;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnItemClick;
 
 public class ActivityTransitionHomePage extends AppCompatActivity {
 
-    @Bind(R.id.activity_transition_samples_list)
+    @BindView(R.id.activity_transition_samples_list)
     ListView mListView;
 
     private static Sample[] mSamples;

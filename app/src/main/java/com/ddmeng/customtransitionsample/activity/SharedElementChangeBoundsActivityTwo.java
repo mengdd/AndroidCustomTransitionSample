@@ -1,10 +1,9 @@
 package com.ddmeng.customtransitionsample.activity;
 
 import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.transition.ChangeBounds;
-import android.transition.ChangeTransform;
 import android.view.Window;
 
 import com.ddmeng.customtransitionsample.R;

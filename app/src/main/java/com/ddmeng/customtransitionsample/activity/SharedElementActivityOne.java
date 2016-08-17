@@ -3,21 +3,20 @@ package com.ddmeng.customtransitionsample.activity;
 import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Build;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.transition.ChangeImageTransform;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Window;
 import android.widget.ImageView;
 
 import com.ddmeng.customtransitionsample.R;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
 public class SharedElementActivityOne extends AppCompatActivity {
 
-    @Bind(R.id.shared_image_view)
+    @BindView(R.id.shared_image_view)
     ImageView mSharedImageView;
 
 
